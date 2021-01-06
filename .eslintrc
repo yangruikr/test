@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/recommended",
+    "@vue/standard",
+    "@vue/typescript/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "useJSXTextNode": true
+  },
+  "rules": {
+    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "semi": [2, "always"],
+    "no-empty-pattern": 2,
+    "no-multiple-empty-lines": [2, { "max": 2, "maxEOF": 5, "maxBOF": 0 }]
+  }
+}
